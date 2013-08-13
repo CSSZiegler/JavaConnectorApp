@@ -2029,8 +2029,8 @@
             <alternateRowSkin>Skin Defaults</alternateRowSkin>
             <secHeaderSkin>Skin Defaults</secHeaderSkin>
             <thickness>1</thickness>
-            <sepColor>100,100,100</sepColor>
-            <seperator_transpy>70</seperator_transpy>
+            <sepColor>0,0,0</sepColor>
+            <seperator_transpy>0</seperator_transpy>
             <view>0</view>
             <retainSelection>false</retainSelection>
             <page_indicator>true</page_indicator>
@@ -2809,7 +2809,7 @@
                 <winphone8_contentalign>middle-left</winphone8_contentalign>
                 <bb10_contentalignment>0</bb10_contentalignment>
             </children>
-            <children xsi:type="kLink">
+            <children xsi:type="kLabel">
                 <ID>lblHTUrl</ID>
                 <gridMetaData>
                     <colSpan>1</colSpan>
@@ -2822,21 +2822,21 @@
                     <verticalAlignment>0</verticalAlignment>
                     <verticalFill>1</verticalFill>
                 </gridMetaData>
-                <widgetID>p2kwiet136760576422</widgetID>
+                <widgetID>p2kwiet136760576423</widgetID>
                 <createdGAVersion>5.0.0</createdGAVersion>
                 <location>
                     <x>1</x>
-                    <y>55</y>
+                    <y>28</y>
                 </location>
                 <size>
                     <width>446</width>
-                    <height>24</height>
+                    <height>26</height>
                 </size>
                 <sizePercent>
                     <width>100</width>
-                    <height>12</height>
+                    <height>13</height>
                 </sizePercent>
-                <skinId>sknLinkWhite</skinId>
+                <skinId>lblWhite</skinId>
                 <focusSkinId>Skin Defaults</focusSkinId>
                 <localeId>None</localeId>
                 <visible>true</visible>
@@ -2944,7 +2944,7 @@
                         <left>1</left>
                         <right>1</right>
                         <top>1</top>
-                        <bottom>1</bottom>
+                        <bottom>2</bottom>
                         <unit>px</unit>
                     </iphonerc>
                     <iphonerc_override>true</iphonerc_override>
@@ -3177,10 +3177,10 @@
                     <bb_override>false</bb_override>
                     <default_override>true</default_override>
                     <defaults>
-                        <left>0</left>
-                        <right>0</right>
-                        <top>0</top>
-                        <bottom>0</bottom>
+                        <left>1</left>
+                        <right>1</right>
+                        <top>1</top>
+                        <bottom>1</bottom>
                         <unit>%</unit>
                     </defaults>
                     <desktop_kiosk>
@@ -3417,49 +3417,42 @@
                     </xhtmlNormal>
                     <xhtmlNormal_override>false</xhtmlNormal_override>
                 </paddings>
-                <SText>Link</SText>
+                <SText>Label</SText>
                 <overridePerferred>
                     <width>true</width>
                     <height>false</height>
                 </overridePerferred>
                 <contentAlign>4</contentAlign>
-                <parent_blocked_UI>Skin Defaults</parent_blocked_UI>
-                <parent_contentalignment>middle-center</parent_contentalignment>
-                <showProgressIndicator>true</showProgressIndicator>
-                <iphone_npi>1</iphone_npi>
-                <iphone_pi_color>0</iphone_pi_color>
-                <iphone_glow_effect>false</iphone_glow_effect>
-                <iphoneProgressIndicator>false</iphoneProgressIndicator>
-                <ipad_npi>1</ipad_npi>
-                <ipad_pi_color>0</ipad_pi_color>
-                <ipad_glow_effect>false</ipad_glow_effect>
-                <ipadProgressIndicator>false</ipadProgressIndicator>
+                <parent_contentalignment>middle-left</parent_contentalignment>
+                <parent_wrapping>word</parent_wrapping>
+                <parent_longText>false</parent_longText>
+                <parent_renderAsAnchor>false</parent_renderAsAnchor>
+                <iphone_wrapping>0</iphone_wrapping>
+                <iphone_contentAlignment>0</iphone_contentAlignment>
+                <iphone_longtext>false</iphone_longtext>
+                <ipad_longtext>false</ipad_longtext>
+                <ipad_wrapping>0</ipad_wrapping>
+                <ipad_content_align>0</ipad_content_align>
                 <tooltip></tooltip>
-                <bb_content_align>4</bb_content_align>
-                <j2me_content_align>4</j2me_content_align>
-                <android_content_align>4</android_content_align>
-                <winMobileContentAlign>middle-center</winMobileContentAlign>
-                <symbianContentAlign>4</symbianContentAlign>
-                <symbianProgressIndicator>false</symbianProgressIndicator>
-                <blockedUISkin>Skin Defaults</blockedUISkin>
-                <tc_extURL></tc_extURL>
-                <tc_preLuaJSEvent></tc_preLuaJSEvent>
-                <tc_postLuaJSEvent></tc_postLuaJSEvent>
-                <tcProgressIndicator>false</tcProgressIndicator>
-                <tc_submitUrl></tc_submitUrl>
-                <spa_blockedUISkin>Skin Defaults</spa_blockedUISkin>
-                <spa_externalURL></spa_externalURL>
-                <spa_preLuaJSEvent></spa_preLuaJSEvent>
-                <spa_postLuaJSEvent></spa_postLuaJSEvent>
-                <pb_blockedUISkin>Skin Defaults</pb_blockedUISkin>
-                <pb_externalURL></pb_externalURL>
-                <pb_preLuaJSEvent></pb_preLuaJSEvent>
-                <pb_postLuaJSEvent></pb_postLuaJSEvent>
-                <desktopWebToolTip></desktopWebToolTip>
+                <bb_longtext>false</bb_longtext>
+                <bb_content_align>0</bb_content_align>
+                <j2me_longtext>false</j2me_longtext>
+                <j2me_content_align>0</j2me_content_align>
+                <android_content_align>0</android_content_align>
+                <winMobileContentAlign>middle-left</winMobileContentAlign>
+                <symbianWrapping>0</symbianWrapping>
+                <symbianContentAlign>0</symbianContentAlign>
+                <tc_renderAsanchor>false</tc_renderAsanchor>
+                <tc_content_align>0</tc_content_align>
+                <spa_renderAsAnchor>false</spa_renderAsAnchor>
+                <spa_contentAlignment>0</spa_contentAlignment>
+                <pb_renderAsAnchor>false</pb_renderAsAnchor>
+                <pb_contentAlignment>0</pb_contentAlignment>
                 <desktop_hoverskin>Skin Defaults</desktop_hoverskin>
+                <desktopweb_toolTip></desktopweb_toolTip>
                 <windows8_hoverskin>Skin Defaults</windows8_hoverskin>
-                <winphone8_contentalign>middle-center</winphone8_contentalign>
-                <bb10_contentAlignment>4</bb10_contentAlignment>
+                <winphone8_contentalign>middle-left</winphone8_contentalign>
+                <bb10_contentalignment>0</bb10_contentalignment>
             </children>
         </children>
         <overrideProperties>KForm.androidtitleBar</overrideProperties>

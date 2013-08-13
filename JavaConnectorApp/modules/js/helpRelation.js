@@ -31,6 +31,7 @@
 */
 	
 	function helpRelationCallback(status, mysqlHelpRelationData){
+	kony.print("Response is ::"+JSON.stringify(mysqlHelpRelationData));
 	   if (status == 400) {
 	        if (mysqlHelpRelationData["opstatus"] == 0) {
 	            if (mysqlHelpRelationData != null && mysqlHelpRelationData != undefined &&

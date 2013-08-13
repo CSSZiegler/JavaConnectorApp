@@ -25,6 +25,7 @@
 ****************************************************************
 */
 		function helpKeywordCallback(status, mysqlHelpKeywordData){
+		kony.print("Response is ::"+JSON.stringify(mysqlHelpKeywordData));
 		   if (status == 400) {
 		        if (mysqlHelpKeywordData["opstatus"] == 0) {
 		            if (mysqlHelpKeywordData != null && mysqlHelpKeywordData != undefined &&

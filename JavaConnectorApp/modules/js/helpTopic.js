@@ -31,6 +31,7 @@
 */
 	function helpTopicCallback(status, mysqlHelpTopicData)
 	{		
+	kony.print("Response is ::"+JSON.stringify(mysqlHelpTopicData));
 		if (status == 400) {
 		     if (mysqlHelpTopicData["opstatus"] == 0) {
 		        if (mysqlHelpTopicData != null && mysqlHelpTopicData != undefined && 

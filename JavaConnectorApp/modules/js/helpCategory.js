@@ -23,6 +23,7 @@
 ****************************************************************
 */
 	function helpCategoryCallback(status, mysqlHelpCategoryData){
+	kony.print("Response is ::"+JSON.stringify(mysqlHelpCategoryData));
 	    if (status == 400) {        
 	        if (mysqlHelpCategoryData["opstatus"] == 0) {
 	            if (mysqlHelpCategoryData != null && mysqlHelpCategoryData != undefined && mysqlHelpCategoryData["helpCategory"] 
