@@ -3,8 +3,7 @@
 *	Name    : searchByHelpCategory
 *	Author  : Kony 
 *	Purpose : This function is used to invoke the helpcategory_mysql javaservice using appmiddlewareinvokerasync method  .
-****************************************************************
-*/
+*****************************************************************/
 	
 	function searchByHelpCategory() {
 		gVisit = 0;
