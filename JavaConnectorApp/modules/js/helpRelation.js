@@ -1,12 +1,10 @@
 
-/*
-****************************************************************
+/*****************************************************************
 *	Name    : serviceHelpRelation
 *	Author  : Kony 
 *	Purpose : This function is used to invoke the helprelation_mysql javaservice using appmiddlewareinvokerasync method  .
 ****************************************************************
 */
-
 	function serviceHelpRelation() {
 	
 		var KeywordID = null;
@@ -25,8 +23,7 @@
 	    var mysqlhelprelation = appmiddlewareinvokerasync(mysqlhelprelation_inputparam, helpRelationCallback);
 	};
 
-/*
-****************************************************************
+/*****************************************************************
 *	Name    : helpRelationCallback
 *	Author  : Kony 
 *	Purpose : This function is used to get parameters status & resultTable i.e. called when appmiddlewareinvokerasync method executes.
@@ -34,9 +31,11 @@
 */
 	
 	function helpRelationCallback(status, mysqlHelpRelationData){
+	kony.print("Response is ::"+JSON.stringify(mysqlHelpRelationData));
 	   if (status == 400) {
 	        if (mysqlHelpRelationData["opstatus"] == 0) {
-	            if (mysqlHelpRelationData != null && mysqlHelpRelationData != undefined && mysqlHelpRelationData["helpRelation"] != null && mysqlHelpRelationData["helpRelation"] != undefined) {
+	            if (mysqlHelpRelationData != null && mysqlHelpRelationData != undefined &&
+	            	 mysqlHelpRelationData["helpRelation"] != null && mysqlHelpRelationData["helpRelation"] != undefined) {
 	                var hlArray = [];
 	                for (var i = 0; i < mysqlHelpRelationData["helpRelation"].length; i++) {
 	                    hlArray.push({
@@ -59,18 +58,16 @@
 		           	return;
 				}	        
 	    }
-	
 	}
 	
-/*
-****************************************************************
-*	Name    : serachOption
+/*****************************************************************
+*	Name    : searchOption
 *	Author  : Kony 
 *	Purpose : This function is used to invoke the helprelation_mysql javaservice using appmiddlewareinvokerasync method  .
 ****************************************************************
 */
 
-	function serachOption() {
+	function searchOption() {
 		var flag= frmSearchOption.segHelpKeyword.selectedIndex[1];
 		if(flag==0)
 			frmCategory.show();
@@ -78,16 +75,14 @@
 		    frmKeywords.show();
 	}	
 
-/*
-****************************************************************
+/*****************************************************************
 *	Name    : navPopupSrch
 *	Author  : Kony 
 *	Purpose : This function is used to show popup 
 ****************************************************************
 */
-
-	function navPopupSrch()
-	{
+function navPopupSrch()
+{
 		//#ifdef ipad
 			var curFrm = kony.application.getCurrentForm();	
 			var popupSettingsContext={"widget":curFrm.btnSearch,"anchor":"bottom","sizetoanchorwidth":true};       
@@ -96,8 +91,8 @@
 
 		popupSrch.show();
 	}
-/*
-****************************************************************
+	
+/*****************************************************************
 *	Name    : dismissPopUp
 *	Author  : Kony 
 *	Purpose : This function is used to show popup 

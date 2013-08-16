@@ -2852,7 +2852,7 @@
             <bb10_contentalignment>0</bb10_contentalignment>
         </children>
         <children xsi:type="kLine">
-            <ID>lineSeperator</ID>
+            <ID>lineSeparator</ID>
             <gridMetaData>
                 <colSpan>1</colSpan>
                 <column>0</column>

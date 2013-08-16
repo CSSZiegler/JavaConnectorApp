@@ -1,11 +1,9 @@
 	
-/*
-****************************************************************
+/*****************************************************************
 *	Name    : searchByHelpCategory
 *	Author  : Kony 
 *	Purpose : This function is used to invoke the helpcategory_mysql javaservice using appmiddlewareinvokerasync method  .
-****************************************************************
-*/
+*****************************************************************/
 	
 	function searchByHelpCategory() {
 		gVisit = 0;
@@ -17,18 +15,18 @@
 	    kony.application.showLoadingScreen("loadskin","Loading...",constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true,true,null);
 	}
 
-/*
-****************************************************************
+/*****************************************************************
 *	Name    : helpCategoryCallback
 *	Author  : Kony 
 *	Purpose : This function is used to get parameters status & resultTable i.e. called when appmiddlewareinvokerasync method executes.
 ****************************************************************
 */
-	
 	function helpCategoryCallback(status, mysqlHelpCategoryData){
+	kony.print("Response is ::"+JSON.stringify(mysqlHelpCategoryData));
 	    if (status == 400) {        
 	        if (mysqlHelpCategoryData["opstatus"] == 0) {
-	            if (mysqlHelpCategoryData != null && mysqlHelpCategoryData != undefined && mysqlHelpCategoryData["helpCategory"] != null && mysqlHelpCategoryData["helpCategory"] != undefined) {
+	            if (mysqlHelpCategoryData != null && mysqlHelpCategoryData != undefined && mysqlHelpCategoryData["helpCategory"] 
+	            		!= null && mysqlHelpCategoryData["helpCategory"] != undefined) {
 	                var hcArray = [];
 	                for (var i = 0; i < mysqlHelpCategoryData["helpCategory"].length; i++) {
 	                    hcArray.push({
@@ -59,8 +57,7 @@
 	    }
 	}
 	
-/*
-****************************************************************
+/*****************************************************************
 *	Name    : navToFrmCategory
 *	Author  : Kony 
 *	Purpose : This function is used to Navigate to Category form.

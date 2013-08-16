@@ -1,12 +1,10 @@
 
-/*
-****************************************************************
+/*****************************************************************
 *	Name    : helpTopicDetails
 *	Author  : Kony 
 *	Purpose : This function is used to invoke the helptopic_mysql javaservice using appmiddlewareinvokerasync method  .
 ****************************************************************
-*/
-	
+*/	
 	function helpTopicDetails()
 	{
 		var CategoryID = null;
@@ -25,19 +23,19 @@
 	   	var mysqlhelptopic = appmiddlewareinvokerasync(mysqlhelptopic_inputparam, helpTopicCallback);
 	};
 	
-/*
-****************************************************************
+/*****************************************************************
 *	Name    : helpTopicCallback
 *	Author  : Kony 
 *	Purpose : This function is used to get parameters status & resultTable i.e. called when appmiddlewareinvokerasync method executes.
 ****************************************************************
 */
-	
 	function helpTopicCallback(status, mysqlHelpTopicData)
 	{		
+	kony.print("Response is ::"+JSON.stringify(mysqlHelpTopicData));
 		if (status == 400) {
 		     if (mysqlHelpTopicData["opstatus"] == 0) {
-		        if (mysqlHelpTopicData != null && mysqlHelpTopicData != undefined && mysqlHelpTopicData["helpTopic"] != null && mysqlHelpTopicData["helpTopic"] != undefined) {
+		        if (mysqlHelpTopicData != null && mysqlHelpTopicData != undefined && 
+		        	mysqlHelpTopicData["helpTopic"] != null && mysqlHelpTopicData["helpTopic"] != undefined) {
 		            var htArray = [];
 		            //#ifdef winmobile
 		            	if(mysqlHelpTopicData["helpTopic"].length == 1){
@@ -78,17 +76,14 @@
 		           	return;
 				}		        
 		    }
-	
 	}
 
-/*
-****************************************************************
+/*****************************************************************
 *	Name    : topicDescription
 *	Author  : Kony 
 *	Purpose : Configuring the request URL to get the Topic Description in browser widget.
 ****************************************************************
 */	
-
 	function topicDescription()
 	{
 		var URL = null,currForm = null ;

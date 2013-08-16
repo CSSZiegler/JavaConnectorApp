@@ -1,5 +1,4 @@
-/*
-****************************************************************
+/*****************************************************************
 *	Name    : searchByHelpKeyword
 *	Author  : Kony 
 *	Purpose : This function is used to invoke the helpkeyword_mysql javaservice using appmiddlewareinvokerasync method  .
@@ -19,18 +18,18 @@
 		    kony.application.showLoadingScreen("loadskin","Loading...",constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true,true,null);        
 		};
 
-/*
-****************************************************************
+/*****************************************************************
 *	Name    : helpKeywordCallback
 *	Author  : Kony 
 *	Purpose : This function is used to get parameters status & resultTable i.e. called when appmiddlewareinvokerasync method executes.
 ****************************************************************
 */
-		
 		function helpKeywordCallback(status, mysqlHelpKeywordData){
+		kony.print("Response is ::"+JSON.stringify(mysqlHelpKeywordData));
 		   if (status == 400) {
 		        if (mysqlHelpKeywordData["opstatus"] == 0) {
-		            if (mysqlHelpKeywordData != null && mysqlHelpKeywordData != undefined && mysqlHelpKeywordData["helpKeyword"] != null && mysqlHelpKeywordData["helpKeyword"] != undefined) {
+		            if (mysqlHelpKeywordData != null && mysqlHelpKeywordData != undefined &&
+		            		 mysqlHelpKeywordData["helpKeyword"] != null && mysqlHelpKeywordData["helpKeyword"] != undefined) {
 		                ghkData = [];
 		                for (var i = 0; i < mysqlHelpKeywordData["helpKeyword"].length; i++) {
 		                    ghkData.push({
@@ -59,12 +58,10 @@
 		           	return;
 				}
 			}
-		
 		}
 		
 
-/*
-****************************************************************
+/*****************************************************************
 *	Name    : paginationNext
 *	Author  : Kony 
 *	Purpose : Defined onClick of next button for pagination of keywords data object in frmKeyword form.
@@ -129,8 +126,7 @@
 			
 			kony.application.dismissLoadingScreen();
 		}
-/*
-****************************************************************
+/****************************************************************
 *	Name    : paginationPrevious
 *	Author  : Kony 
 *	Purpose : Defined onClick of previous button for pagination of keywords data object in frmKeyword form.
@@ -186,8 +182,7 @@
 			}
 			kony.application.dismissLoadingScreen();
 		}
-/*
-****************************************************************
+/*****************************************************************
 *	Name    : navToFrmKeyword
 *	Author  : Kony 
 *	Purpose : This function is used to Navigate to Keywords form.
