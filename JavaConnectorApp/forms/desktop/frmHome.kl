@@ -438,11 +438,7 @@
                     <exprMap>
                         <entry>
                             <key>js</key>
-                            <value>channel = "tablet";
-popupSrch.hbxCateg.setEnabled(true);
-popupSrch.hbxKey.setEnabled(true);
-popupSrch.lblCatge.skin = "lblPopup";
-popupSrch.lblKey.skin = "lblPopup";</value>
+                            <value></value>
                         </entry>
                     </exprMap>
                 </actionList>
@@ -1405,6 +1401,10 @@ popupSrch.lblKey.skin = "lblPopup";</value>
                         <paramDataMap>
                             <entry>
                                 <key>js</key>
+                                <value/>
+                            </entry>
+                            <entry>
+                                <key>lua</key>
                                 <value/>
                             </entry>
                         </paramDataMap>

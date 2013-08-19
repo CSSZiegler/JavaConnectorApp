@@ -438,11 +438,7 @@
                     <exprMap>
                         <entry>
                             <key>js</key>
-                            <value>channel = "tablet";
-popupSrch.hbxCateg.setEnabled(true);
-popupSrch.hbxKey.setEnabled(true);
-popupSrch.lblCatge.skin = "lblPopup";
-popupSrch.lblKey.skin = "lblPopup";</value>
+                            <value></value>
                         </entry>
                     </exprMap>
                 </actionList>
@@ -556,7 +552,7 @@ popupSrch.lblKey.skin = "lblPopup";</value>
         <ipad_footer_overlap>0</ipad_footer_overlap>
         <ipad_footerOverlap>false</ipad_footerOverlap>
         <ipad_headerOverlap>false</ipad_headerOverlap>
-        <ipad_orientation>0</ipad_orientation>
+        <ipad_orientation>2</ipad_orientation>
         <ipadMenuRenderer>true</ipadMenuRenderer>
         <ipad_transDirection>0</ipad_transDirection>
         <ipadOutTransEffect>0</ipadOutTransEffect>
@@ -2754,6 +2750,10 @@ popupSrch.lblKey.skin = "lblPopup";</value>
                                     <key>js</key>
                                     <value/>
                                 </entry>
+                                <entry>
+                                    <key>lua</key>
+                                    <value/>
+                                </entry>
                             </paramDataMap>
                         </actionList>
                         <enabled>true</enabled>
@@ -3467,6 +3467,10 @@ popupSrch.lblKey.skin = "lblPopup";</value>
                         <paramDataMap>
                             <entry>
                                 <key>js</key>
+                                <value/>
+                            </entry>
+                            <entry>
+                                <key>lua</key>
                                 <value/>
                             </entry>
                         </paramDataMap>
@@ -10209,6 +10213,7 @@ popupSrch.lblKey.skin = "lblPopup";</value>
         </children>
         <overrideProperties>KForm.androidtitleBar</overrideProperties>
         <overrideProperties>KForm.bbTitleBar</overrideProperties>
+        <overrideProperties>KForm.ipad_Orientation</overrideProperties>
         <overrideProperties>KForm.ipadtitleBar</overrideProperties>
         <winphone8_intransition>Default</winphone8_intransition>
         <winphone8_outtransition>Default</winphone8_outtransition>

@@ -101,5 +101,5 @@ function navPopupSrch()
 	function dismissPopUp()
 	{
 			popupSrch.dismiss();
-	
+	        channel="tablet";
 	}

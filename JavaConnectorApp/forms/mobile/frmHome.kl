@@ -753,7 +753,7 @@
         <desktopweb_draggable>false</desktopweb_draggable>
         <desktopweb_minonlostfocus>false</desktopweb_minonlostfocus>
         <children xsi:type="kLabel">
-            <ID>lblInfo</ID>
+            <ID>lblinfo</ID>
             <gridMetaData>
                 <colSpan>1</colSpan>
                 <column>0</column>
@@ -769,7 +769,7 @@
             <createdGAVersion>5.0.0</createdGAVersion>
             <location>
                 <x>1</x>
-                <y>49</y>
+                <y>42</y>
             </location>
             <size>
                 <width>448</width>

@@ -2836,7 +2836,7 @@
                     <width>100</width>
                     <height>13</height>
                 </sizePercent>
-                <skinId>lblWhite</skinId>
+                <skinId>lblUrlSkin</skinId>
                 <focusSkinId>Skin Defaults</focusSkinId>
                 <localeId>None</localeId>
                 <visible>true</visible>

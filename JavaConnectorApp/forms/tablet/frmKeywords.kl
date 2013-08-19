@@ -438,14 +438,7 @@
                     <exprMap>
                         <entry>
                             <key>js</key>
-                            <value>popupSrch.hbxKey.setEnabled(false);
-popupSrch.lblKey.skin = "lblTest";
-
-popupSrch.hbxCateg.setEnabled(true);
-popupSrch.lblCatge.skin = "lblPopup";
-
-frmKeywords.segHelpKeyword.widgetSkin="sknSeg2NormalSampleApp";
-frmKeywords.segHelptopic.widgetSkin="SegRoundWhite";</value>
+                            <value></value>
                         </entry>
                     </exprMap>
                 </actionList>

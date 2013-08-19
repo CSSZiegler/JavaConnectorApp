@@ -438,14 +438,7 @@
                     <exprMap>
                         <entry>
                             <key>js</key>
-                            <value>popupSrch.hbxCateg.setEnabled(false);
-popupSrch.lblCatge.skin = "lblTest";
-
-popupSrch.hbxKey.setEnabled(true);
-popupSrch.lblKey.skin = "lblPopup";
-
-frmCategory.segHelpCategory.widgetSkin="sknSeg2NormalSampleApp";
-frmCategory.segHelptopic.widgetSkin="SegRoundWhite";</value>
+                            <value></value>
                         </entry>
                     </exprMap>
                 </actionList>
@@ -469,6 +462,10 @@ frmCategory.segHelptopic.widgetSkin="SegRoundWhite";</value>
                     <paramDataMap>
                         <entry>
                             <key>js</key>
+                            <value/>
+                        </entry>
+                        <entry>
+                            <key>lua</key>
                             <value/>
                         </entry>
                     </paramDataMap>
