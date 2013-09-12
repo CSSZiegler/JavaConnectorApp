@@ -12,12 +12,17 @@ The purpose of this application is to showcase how you can integrate Java servic
 [javaservice4PaaS.jar](https://github.com/kony/JavaConnectorApp/tree/master/Resources_Required) is the source(jar) file for the java Services used in the Javaconnector App
 
 # Supported platforms:
-* iPhone
-* iPad
-* Android
-* Android tablet
-* SPA iPhone
-* SPA iPad
-* SPA Android
-* SPA Android tablet
-* DesktopWeb
+**Mobile**
+ * Android
+ * iPhone
+ * SPA Android
+ * SPA iPhone
+ 
+**Tablet** 
+ * Anroid
+ * iPad
+ * SPA iPad
+ * SPA Android
+ 
+**Desktop**
+ * DesktopWeb
