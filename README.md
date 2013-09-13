@@ -19,7 +19,7 @@ The purpose of this application is to showcase how you can integrate Java servic
  * SPA iPhone
  
 **Tablet** 
- * Anroid
+ * Android
  * iPad
  * SPA iPad
  * SPA Android
