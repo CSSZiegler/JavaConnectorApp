@@ -430,17 +430,23 @@
         <title>Search by keyword</title>
         <preShow_root>
             <evtSequence>
-                <actionList xsi:type="eventExpressionAction">
+                <actionList xsi:type="eventFunctionAction">
                     <enabled>true</enabled>
                     <name></name>
-                    <type>5</type>
-                    <expr></expr>
-                    <exprMap>
+                    <type>6</type>
+                    <functionName>None</functionName>
+                    <functionNameMap>
                         <entry>
                             <key>js</key>
-                            <value></value>
+                            <value>frmKeywords_preshow</value>
                         </entry>
-                    </exprMap>
+                    </functionNameMap>
+                    <paramDataMap>
+                        <entry>
+                            <key>js</key>
+                            <value/>
+                        </entry>
+                    </paramDataMap>
                 </actionList>
                 <enabled>true</enabled>
                 <seqname></seqname>
@@ -509,6 +515,7 @@
         </onDestroy>
         <bbMenuPosition>FORM_MENU_POSITION_AFTER_APPMENU</bbMenuPosition>
         <androidMenuPosition>FORM_MENU_POSITION_AFTER_APPMENU</androidMenuPosition>
+        <iphone_bounces>true</iphone_bounces>
         <iphone_inputaccessoryviewtype>default</iphone_inputaccessoryviewtype>
         <iphoneMenuRenderer>true</iphoneMenuRenderer>
         <iphone_transDirection>0</iphone_transDirection>
@@ -574,6 +581,7 @@
         <iphone_footer_overlap>0</iphone_footer_overlap>
         <iphone_footerOverlap>false</iphone_footerOverlap>
         <iphone_headerOverlap>false</iphone_headerOverlap>
+        <ipad_bounces>true</ipad_bounces>
         <ipad_inputaccessoryviewtype>default</ipad_inputaccessoryviewtype>
         <ipad_footer_overlap>0</ipad_footer_overlap>
         <ipad_footerOverlap>false</ipad_footerOverlap>
@@ -704,6 +712,12 @@
                 <seqname></seqname>
             </evtSequence>
         </android_onDeviceMenu>
+        <android_onActionBarBack>
+            <evtSequence>
+                <enabled>true</enabled>
+                <seqname></seqname>
+            </evtSequence>
+        </android_onActionBarBack>
         <palmpreTitleBarData>
             <imagePath></imagePath>
             <imgEvtData>
@@ -733,6 +747,9 @@
         </androidTitleBarData>
         <android_softkeyMode>SoftInput adjust resize</android_softkeyMode>
         <android_transition_out_effect>0</android_transition_out_effect>
+        <android_showActionBar>true</android_showActionBar>
+        <android_showActionBarIcon>true</android_showActionBarIcon>
+        <android_actionBarIcon></android_actionBarIcon>
         <tc_titlebar>true</tc_titlebar>
         <tcHtml5CaptureGPS>false</tcHtml5CaptureGPS>
         <tc_securedata>false</tc_securedata>
@@ -2070,6 +2087,7 @@
                 <ipad_longtext>false</ipad_longtext>
                 <ipad_wrapping>0</ipad_wrapping>
                 <ipad_content_align>0</ipad_content_align>
+                <c_ToolTip></c_ToolTip>
                 <tooltip></tooltip>
                 <bb_longtext>false</bb_longtext>
                 <bb_content_align>0</bb_content_align>
@@ -2757,6 +2775,7 @@
                 <bb_content_align>1</bb_content_align>
                 <bb_display_text>true</bb_display_text>
                 <j2me_content_align>1</j2me_content_align>
+                <c_ToolTip></c_ToolTip>
                 <tooltip></tooltip>
                 <android_display_text>true</android_display_text>
                 <android_pressed_skin>Skin Defaults</android_pressed_skin>
@@ -3438,6 +3457,7 @@
             <ipad_longtext>false</ipad_longtext>
             <ipad_wrapping>0</ipad_wrapping>
             <ipad_content_align>0</ipad_content_align>
+            <c_ToolTip></c_ToolTip>
             <tooltip></tooltip>
             <bb_longtext>false</bb_longtext>
             <bb_content_align>0</bb_content_align>
@@ -3909,10 +3929,10 @@
                 </symbian>
                 <symbian_override>false</symbian_override>
                 <tabRCAndroid>
-                    <left>1</left>
-                    <right>1</right>
-                    <top>1</top>
-                    <bottom>1</bottom>
+                    <left>0</left>
+                    <right>0</right>
+                    <top>0</top>
+                    <bottom>0</bottom>
                     <unit>%</unit>
                 </tabRCAndroid>
                 <tablet_rc_android_override>true</tablet_rc_android_override>
@@ -5200,7 +5220,7 @@
                             <bottom>0</bottom>
                             <unit>%</unit>
                         </tabRCAndroid>
-                        <tablet_rc_android_override>false</tablet_rc_android_override>
+                        <tablet_rc_android_override>true</tablet_rc_android_override>
                         <tabspaAndroid>
                             <left>0</left>
                             <right>0</right>
@@ -6039,10 +6059,12 @@
                             </evtSequence>
                         </event_onPush>
                         <parent_position>0</parent_position>
+                        <iphone_bounces>true</iphone_bounces>
                         <iphone_position>0</iphone_position>
                         <iphone_scrollvisible>true</iphone_scrollvisible>
                         <parent_pagingenabled>false</parent_pagingenabled>
                         <iphone_pagingenabled>false</iphone_pagingenabled>
+                        <ipad_bounces>true</ipad_bounces>
                         <ipad_scrollvisible>true</ipad_scrollvisible>
                         <ipad_pagingenabled>false</ipad_pagingenabled>
                         <ipad_position>0</ipad_position>
@@ -6261,7 +6283,7 @@
                                     <bottom>0</bottom>
                                     <unit>%</unit>
                                 </tabRCAndroid>
-                                <tablet_rc_android_override>false</tablet_rc_android_override>
+                                <tablet_rc_android_override>true</tablet_rc_android_override>
                                 <tabspaAndroid>
                                     <left>0</left>
                                     <right>0</right>
@@ -6292,7 +6314,7 @@
                                     <bottom>0</bottom>
                                     <unit>%</unit>
                                 </windows8>
-                                <windows8_override>false</windows8_override>
+                                <windows8_override>true</windows8_override>
                                 <winmobile>
                                     <left>0</left>
                                     <right>0</right>
@@ -6719,7 +6741,7 @@
                             </choiceData>
                             <widgetSkin>sknSeg2NormalSampleApp</widgetSkin>
                             <rowSkin>Skin Defaults</rowSkin>
-                            <rowFocusSkin>seg2Focus</rowFocusSkin>
+                            <rowFocusSkin>Skin Defaults</rowFocusSkin>
                             <alternateRowSkin>Skin Defaults</alternateRowSkin>
                             <secHeaderSkin>Skin Defaults</secHeaderSkin>
                             <thickness>1</thickness>
@@ -6816,7 +6838,7 @@
                                 </evtSequence>
                             </iphone_onEditing>
                             <iphone_editStyle>SEGUI_EDITING_STYLE_NONE</iphone_editStyle>
-                            <ipad_executeonClosure>2</ipad_executeonClosure>
+                            <ipad_executeonClosure>0</ipad_executeonClosure>
                             <ipad_enableDictionary>false</ipad_enableDictionary>
                             <ipad_npi>true</ipad_npi>
                             <ipad_pi_color>0</ipad_pi_color>
@@ -8132,6 +8154,7 @@
                                     <ipad_longtext>false</ipad_longtext>
                                     <ipad_wrapping>0</ipad_wrapping>
                                     <ipad_content_align>0</ipad_content_align>
+                                    <c_ToolTip></c_ToolTip>
                                     <tooltip></tooltip>
                                     <bb_longtext>false</bb_longtext>
                                     <bb_content_align>0</bb_content_align>
@@ -8190,15 +8213,15 @@
                                         <desktop_kiosk_channel>true</desktop_kiosk_channel>
                                         <desktop_web_channel>true</desktop_web_channel>
                                         <mixed_android>true</mixed_android>
-                                        <mixed_android_tab>true</mixed_android_tab>
+                                        <mixed_android_tab>false</mixed_android_tab>
                                         <mixed_bb>true</mixed_bb>
-                                        <mixed_ipad>true</mixed_ipad>
+                                        <mixed_ipad>false</mixed_ipad>
                                         <mixed_iphone>true</mixed_iphone>
                                         <rc_android>true</rc_android>
                                         <rc_android_tab>true</rc_android_tab>
                                         <rc_blackberry>true</rc_blackberry>
                                         <rc_blackberry10>true</rc_blackberry10>
-                                        <rc_ipad>true</rc_ipad>
+                                        <rc_ipad>false</rc_ipad>
                                         <rc_iphone>true</rc_iphone>
                                         <rc_j2me>true</rc_j2me>
                                         <rc_palm>true</rc_palm>
@@ -8785,6 +8808,7 @@
                                     <iphone_downloadProgressIndicator>true</iphone_downloadProgressIndicator>
                                     <ipad_glossy_effect>0</ipad_glossy_effect>
                                     <ipad_downloadProgressIndicator>true</ipad_downloadProgressIndicator>
+                                    <c_ToolTip></c_ToolTip>
                                     <tooltip></tooltip>
                                     <onDownloadComplete_root>
                                         <evtSequence>
@@ -11470,6 +11494,7 @@
                                 <iphone_downloadProgressIndicator>true</iphone_downloadProgressIndicator>
                                 <ipad_glossy_effect>0</ipad_glossy_effect>
                                 <ipad_downloadProgressIndicator>true</ipad_downloadProgressIndicator>
+                                <c_ToolTip></c_ToolTip>
                                 <tooltip></tooltip>
                                 <onDownloadComplete_root>
                                     <evtSequence>
@@ -13461,6 +13486,7 @@
                                 <ipad_longtext>false</ipad_longtext>
                                 <ipad_wrapping>0</ipad_wrapping>
                                 <ipad_content_align>0</ipad_content_align>
+                                <c_ToolTip></c_ToolTip>
                                 <tooltip></tooltip>
                                 <bb_longtext>false</bb_longtext>
                                 <bb_content_align>0</bb_content_align>
@@ -14106,6 +14132,7 @@
                                 <ipad_longtext>false</ipad_longtext>
                                 <ipad_wrapping>0</ipad_wrapping>
                                 <ipad_content_align>0</ipad_content_align>
+                                <c_ToolTip></c_ToolTip>
                                 <tooltip></tooltip>
                                 <bb_longtext>false</bb_longtext>
                                 <bb_content_align>0</bb_content_align>
@@ -14751,6 +14778,7 @@
                                 <ipad_longtext>false</ipad_longtext>
                                 <ipad_wrapping>0</ipad_wrapping>
                                 <ipad_content_align>0</ipad_content_align>
+                                <c_ToolTip></c_ToolTip>
                                 <tooltip></tooltip>
                                 <bb_longtext>false</bb_longtext>
                                 <bb_content_align>0</bb_content_align>
@@ -16738,6 +16766,7 @@
                                 <iphone_downloadProgressIndicator>true</iphone_downloadProgressIndicator>
                                 <ipad_glossy_effect>0</ipad_glossy_effect>
                                 <ipad_downloadProgressIndicator>true</ipad_downloadProgressIndicator>
+                                <c_ToolTip></c_ToolTip>
                                 <tooltip></tooltip>
                                 <onDownloadComplete_root>
                                     <evtSequence>
@@ -18767,10 +18796,12 @@
                             </evtSequence>
                         </event_onPush>
                         <parent_position>0</parent_position>
+                        <iphone_bounces>true</iphone_bounces>
                         <iphone_position>0</iphone_position>
                         <iphone_scrollvisible>true</iphone_scrollvisible>
                         <parent_pagingenabled>false</parent_pagingenabled>
                         <iphone_pagingenabled>false</iphone_pagingenabled>
+                        <ipad_bounces>true</ipad_bounces>
                         <ipad_scrollvisible>true</ipad_scrollvisible>
                         <ipad_pagingenabled>false</ipad_pagingenabled>
                         <ipad_position>0</ipad_position>
@@ -19420,6 +19451,7 @@
                             <ipad_longtext>false</ipad_longtext>
                             <ipad_wrapping>0</ipad_wrapping>
                             <ipad_content_align>0</ipad_content_align>
+                            <c_ToolTip></c_ToolTip>
                             <tooltip></tooltip>
                             <bb_longtext>false</bb_longtext>
                             <bb_content_align>0</bb_content_align>
@@ -20069,12 +20101,12 @@
                             </choiceData>
                             <widgetSkin>Skin Defaults</widgetSkin>
                             <rowSkin>Skin Defaults</rowSkin>
-                            <rowFocusSkin>Skin Defaults</rowFocusSkin>
+                            <rowFocusSkin>sknSeg2FocusSampleApp</rowFocusSkin>
                             <alternateRowSkin>Skin Defaults</alternateRowSkin>
                             <secHeaderSkin>Skin Defaults</secHeaderSkin>
                             <thickness>1</thickness>
-                            <sepColor>100,100,100</sepColor>
-                            <seperator_transpy>70</seperator_transpy>
+                            <sepColor>255,255,255</sepColor>
+                            <seperator_transpy>0</seperator_transpy>
                             <view>0</view>
                             <retainSelection>false</retainSelection>
                             <page_indicator>true</page_indicator>
@@ -20641,13 +20673,13 @@
                                     <spaipad>
                                         <left>0</left>
                                         <right>0</right>
-                                        <top>0</top>
+                                        <top>1</top>
                                         <bottom>0</bottom>
                                         <unit>%</unit>
                                     </spaipad>
-                                    <spaipad_override>false</spaipad_override>
-                                    <spatablet_android_override>false</spatablet_android_override>
-                                    <spatablet_windows_override>false</spatablet_windows_override>
+                                    <spaipad_override>true</spaipad_override>
+                                    <spatablet_android_override>true</spatablet_android_override>
+                                    <spatablet_windows_override>true</spatablet_windows_override>
                                     <symbian>
                                         <left>1</left>
                                         <right>1</right>
@@ -20667,7 +20699,7 @@
                                     <tabspaAndroid>
                                         <left>0</left>
                                         <right>0</right>
-                                        <top>0</top>
+                                        <top>1</top>
                                         <bottom>0</bottom>
                                         <unit>%</unit>
                                     </tabspaAndroid>
@@ -20832,6 +20864,7 @@
                                 <ipad_longtext>false</ipad_longtext>
                                 <ipad_wrapping>0</ipad_wrapping>
                                 <ipad_content_align>0</ipad_content_align>
+                                <c_ToolTip></c_ToolTip>
                                 <tooltip></tooltip>
                                 <bb_longtext>false</bb_longtext>
                                 <bb_content_align>0</bb_content_align>
@@ -21287,12 +21320,12 @@
                                         <left>0</left>
                                         <right>0</right>
                                         <top>0</top>
-                                        <bottom>0</bottom>
+                                        <bottom>1</bottom>
                                         <unit>%</unit>
                                     </spaipad>
-                                    <spaipad_override>false</spaipad_override>
-                                    <spatablet_android_override>false</spatablet_android_override>
-                                    <spatablet_windows_override>false</spatablet_windows_override>
+                                    <spaipad_override>true</spaipad_override>
+                                    <spatablet_android_override>true</spatablet_android_override>
+                                    <spatablet_windows_override>true</spatablet_windows_override>
                                     <symbian>
                                         <left>1</left>
                                         <right>1</right>
@@ -21313,7 +21346,7 @@
                                         <left>0</left>
                                         <right>0</right>
                                         <top>0</top>
-                                        <bottom>0</bottom>
+                                        <bottom>1</bottom>
                                         <unit>%</unit>
                                     </tabspaAndroid>
                                     <tabspaWindows>
@@ -21477,6 +21510,7 @@
                                 <ipad_longtext>false</ipad_longtext>
                                 <ipad_wrapping>0</ipad_wrapping>
                                 <ipad_content_align>0</ipad_content_align>
+                                <c_ToolTip></c_ToolTip>
                                 <tooltip></tooltip>
                                 <bb_longtext>false</bb_longtext>
                                 <bb_content_align>0</bb_content_align>
@@ -21575,6 +21609,7 @@
                 <seqname></seqname>
             </evtSequence>
         </bb10_onEscape10_root>
+        <bb10_softkeyMode>FORM_ADJUST_RESIZE</bb10_softkeyMode>
     </children>
     <children xsi:type="kMenuContainer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <ID></ID>

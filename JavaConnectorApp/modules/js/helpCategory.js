@@ -37,12 +37,13 @@
 	                frmCategory.segHelpCategory.setData(hcArray);
 		            frmCategory.lblInfo.text = "Select a category for respective HelpTopics: ";
 		            if(channel==="tablet"){
-                	frmCategory.segHelpCategory.selectedIndex=[0,0];
-                	helpTopicDetails();
+		            	frmCategory.segHelpCategory.selectedIndex=[0,0];
+	                	helpTopicDetails();
+	                	frmCategory.hbxTitle.setFocus(true);
                     }	
                  	else
                 	hbxFooterPage.setVisibility(true);
-                 kony.application.dismissLoadingScreen();
+                    kony.application.dismissLoadingScreen();
 	            }
 	        }
 			else{

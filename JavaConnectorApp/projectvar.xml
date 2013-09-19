@@ -1,4 +1,4 @@
 <globals>
     <attributes datatype="string" value="mobile" name="channel"/>
-    <attributes datatype="number" value="1" name="gVisit"/>
+    <attributes datatype="number" value="0" name="gVisit"/>
 </globals>

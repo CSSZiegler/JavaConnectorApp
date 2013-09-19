@@ -99,3 +99,41 @@
 		kony.application.dismissLoadingScreen();
 	}
 
+/*****************************************************************
+*	Name    : frmCategory_preshow
+*	Author  : Kony 
+*	Purpose : This function is to disable popup 'search by category' option  
+****************************************************************
+*/	
+	function frmCategory_preshow() {
+	    popupSrch.hbxCateg.setEnabled(false);
+	    popupSrch.lblCatge.skin = "lblTest";
+	    popupSrch.hbxKey.setEnabled(true);
+	    popupSrch.lblKey.skin = "lblPopup";
+	};
+/*****************************************************************
+*	Name    : frmHome_preshow
+*	Author  : Kony 
+*	Purpose : This function is to enable both popup options 
+****************************************************************
+*/	
+	function frmHome_preshow() {
+	    channel = "tablet";
+	    popupSrch.hbxCateg.setEnabled(true);
+	    popupSrch.hbxKey.setEnabled(true);
+	    popupSrch.lblCatge.skin = "lblPopup";
+	    popupSrch.lblKey.skin = "lblPopup";
+	};	
+/*****************************************************************
+*	Name    : frmKeywords_preshow
+*	Author  : Kony 
+*	Purpose : This function is to disable popup 'search by category' option  
+****************************************************************
+*/	
+	function frmKeywords_preshow() {
+		popupSrch.hbxKey.setEnabled(false);
+		popupSrch.lblKey.skin = "lblTest";
+		popupSrch.hbxCateg.setEnabled(true);
+		popupSrch.lblCatge.skin = "lblPopup";
+	    
+	};

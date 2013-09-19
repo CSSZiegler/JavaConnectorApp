@@ -122,6 +122,7 @@
 			if(channel==="tablet"){
 			frmKeywords.segHelpKeyword.selectedIndex=[0,0];
 			serviceHelpRelation();
+			frmKeywords.hbxHelp.setFocus(true);
 			}
 			
 			kony.application.dismissLoadingScreen();
