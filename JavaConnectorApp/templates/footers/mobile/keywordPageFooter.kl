@@ -465,6 +465,7 @@
         </onDestroy>
         <bbMenuPosition>FORM_MENU_POSITION_AFTER_APPMENU</bbMenuPosition>
         <androidMenuPosition>FORM_MENU_POSITION_AFTER_APPMENU</androidMenuPosition>
+        <iphone_bounces>true</iphone_bounces>
         <iphone_inputaccessoryviewtype>default</iphone_inputaccessoryviewtype>
         <iphoneMenuRenderer>true</iphoneMenuRenderer>
         <iphone_transDirection>0</iphone_transDirection>
@@ -530,6 +531,7 @@
         <iphone_footer_overlap>0</iphone_footer_overlap>
         <iphone_footerOverlap>false</iphone_footerOverlap>
         <iphone_headerOverlap>false</iphone_headerOverlap>
+        <ipad_bounces>true</ipad_bounces>
         <ipad_inputaccessoryviewtype>default</ipad_inputaccessoryviewtype>
         <ipad_footer_overlap>0</ipad_footer_overlap>
         <ipad_footerOverlap>false</ipad_footerOverlap>
@@ -660,6 +662,12 @@
                 <seqname></seqname>
             </evtSequence>
         </android_onDeviceMenu>
+        <android_onActionBarBack>
+            <evtSequence>
+                <enabled>true</enabled>
+                <seqname></seqname>
+            </evtSequence>
+        </android_onActionBarBack>
         <palmpreTitleBarData>
             <imagePath></imagePath>
             <imgEvtData>
@@ -689,6 +697,9 @@
         </androidTitleBarData>
         <android_softkeyMode>SoftInput adjust resize</android_softkeyMode>
         <android_transition_out_effect>0</android_transition_out_effect>
+        <android_showActionBar>true</android_showActionBar>
+        <android_showActionBarIcon>true</android_showActionBarIcon>
+        <android_actionBarIcon></android_actionBarIcon>
         <tc_titlebar>true</tc_titlebar>
         <tcHtml5CaptureGPS>false</tcHtml5CaptureGPS>
         <tc_securedata>false</tc_securedata>
@@ -787,23 +798,23 @@
             <rendererData>
                 <desktop_kiosk_channel>true</desktop_kiosk_channel>
                 <desktop_web_channel>true</desktop_web_channel>
-                <mixed_android>true</mixed_android>
+                <mixed_android>false</mixed_android>
                 <mixed_android_tab>true</mixed_android_tab>
-                <mixed_bb>true</mixed_bb>
+                <mixed_bb>false</mixed_bb>
                 <mixed_ipad>true</mixed_ipad>
-                <mixed_iphone>true</mixed_iphone>
+                <mixed_iphone>false</mixed_iphone>
                 <rc_android>true</rc_android>
                 <rc_android_tab>true</rc_android_tab>
                 <rc_blackberry>true</rc_blackberry>
-                <rc_blackberry10>true</rc_blackberry10>
+                <rc_blackberry10>false</rc_blackberry10>
                 <rc_ipad>true</rc_ipad>
                 <rc_iphone>true</rc_iphone>
-                <rc_j2me>true</rc_j2me>
-                <rc_palm>true</rc_palm>
-                <rc_symbian>true</rc_symbian>
+                <rc_j2me>false</rc_j2me>
+                <rc_palm>false</rc_palm>
+                <rc_symbian>false</rc_symbian>
                 <rc_windows8>true</rc_windows8>
                 <rc_winmobile>true</rc_winmobile>
-                <rc_winmobile6x>true</rc_winmobile6x>
+                <rc_winmobile6x>false</rc_winmobile6x>
                 <rc_winphone8>true</rc_winphone8>
                 <tabspa_ipad>true</tabspa_ipad>
                 <tabspa_windows>true</tabspa_windows>
@@ -823,7 +834,7 @@
                 <tc_xhtml_js>true</tc_xhtml_js>
                 <wrapper_android>true</wrapper_android>
                 <wrapper_android_tab>true</wrapper_android_tab>
-                <wrapper_bb>true</wrapper_bb>
+                <wrapper_bb>false</wrapper_bb>
                 <wrapper_ipad>true</wrapper_ipad>
                 <wrapper_iphone>true</wrapper_iphone>
             </rendererData>
@@ -1243,9 +1254,9 @@
                 <winmobile>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
-                    <unit>px</unit>
+                    <top>3</top>
+                    <bottom>3</bottom>
+                    <unit>%</unit>
                 </winmobile>
                 <winmobile6x>
                     <left>0</left>
@@ -1255,15 +1266,15 @@
                     <unit>px</unit>
                 </winmobile6x>
                 <winmobile6x_override>true</winmobile6x_override>
-                <winmobile_override>false</winmobile_override>
+                <winmobile_override>true</winmobile_override>
                 <winphone8>
-                    <left>1</left>
-                    <right>1</right>
-                    <top>1</top>
-                    <bottom>1</bottom>
-                    <unit>px</unit>
+                    <left>0</left>
+                    <right>0</right>
+                    <top>3</top>
+                    <bottom>3</bottom>
+                    <unit>%</unit>
                 </winphone8>
-                <winphone8_override>false</winphone8_override>
+                <winphone8_override>true</winphone8_override>
                 <xhtmlAdvBB>
                     <left>0</left>
                     <right>0</right>
@@ -2045,7 +2056,7 @@
                         <seqname></seqname>
                     </evtSequence>
                 </onClick>
-                <contentAlign>0</contentAlign>
+                <contentAlign>4</contentAlign>
                 <wm_derive_height>false</wm_derive_height>
                 <tooltip></tooltip>
                 <gridviewConfig>
@@ -2687,7 +2698,7 @@
                     <iphone_fixed_height>false</iphone_fixed_height>
                     <iphone_req_parallel_exec>false</iphone_req_parallel_exec>
                     <iphone_option>0</iphone_option>
-                    <contentAlign>0</contentAlign>
+                    <contentAlign>4</contentAlign>
                     <ipad_option>0</ipad_option>
                     <ipad_fixed_height>false</ipad_fixed_height>
                     <bb_position>0</bb_position>
@@ -3337,7 +3348,7 @@
                             <width>false</width>
                             <height>false</height>
                         </overridePerferred>
-                        <contentAlign>1</contentAlign>
+                        <contentAlign>4</contentAlign>
                         <defaultImageText>trans1.png</defaultImageText>
                         <animationText>trans1.png</animationText>
                         <scale_mode>1</scale_mode>
@@ -3347,6 +3358,7 @@
                         <iphone_downloadProgressIndicator>true</iphone_downloadProgressIndicator>
                         <ipad_glossy_effect>0</ipad_glossy_effect>
                         <ipad_downloadProgressIndicator>true</ipad_downloadProgressIndicator>
+                        <c_ToolTip></c_ToolTip>
                         <tooltip></tooltip>
                         <onDownloadComplete_root>
                             <evtSequence>
@@ -4072,7 +4084,7 @@
                         <seqname></seqname>
                     </evtSequence>
                 </onClick>
-                <contentAlign>0</contentAlign>
+                <contentAlign>4</contentAlign>
                 <wm_derive_height>false</wm_derive_height>
                 <tooltip></tooltip>
                 <gridviewConfig>
@@ -4714,7 +4726,7 @@
                     <iphone_fixed_height>false</iphone_fixed_height>
                     <iphone_req_parallel_exec>false</iphone_req_parallel_exec>
                     <iphone_option>0</iphone_option>
-                    <contentAlign>0</contentAlign>
+                    <contentAlign>4</contentAlign>
                     <ipad_option>0</ipad_option>
                     <ipad_fixed_height>false</ipad_fixed_height>
                     <bb_position>0</bb_position>
@@ -4771,8 +4783,8 @@
                         </sizePercent>
                         <skinId>Skin Defaults</skinId>
                         <focusSkinId>Skin Defaults</focusSkinId>
-                        <referenceWidth>40</referenceWidth>
-                        <referenceHeight>25</referenceHeight>
+                        <referenceWidth></referenceWidth>
+                        <referenceHeight></referenceHeight>
                         <localeId>None</localeId>
                         <visible>true</visible>
                         <rendererData>
@@ -5364,16 +5376,17 @@
                             <width>false</width>
                             <height>false</height>
                         </overridePerferred>
-                        <contentAlign>1</contentAlign>
+                        <contentAlign>4</contentAlign>
                         <defaultImageText>arwleftd.png</defaultImageText>
                         <animationText>trans1.png</animationText>
-                        <scale_mode>0</scale_mode>
+                        <scale_mode>1</scale_mode>
                         <itemSkinId>Skin Defaults</itemSkinId>
                         <itemFocusSkinId>Skin Defaults</itemFocusSkinId>
                         <iphone_glossy_effect>0</iphone_glossy_effect>
                         <iphone_downloadProgressIndicator>true</iphone_downloadProgressIndicator>
                         <ipad_glossy_effect>0</ipad_glossy_effect>
                         <ipad_downloadProgressIndicator>true</ipad_downloadProgressIndicator>
+                        <c_ToolTip></c_ToolTip>
                         <tooltip></tooltip>
                         <onDownloadComplete_root>
                             <evtSequence>
@@ -5699,13 +5712,13 @@
                     <winmobile6x_override>true</winmobile6x_override>
                     <winmobile_override>true</winmobile_override>
                     <winphone8>
-                        <left>1</left>
-                        <right>1</right>
-                        <top>1</top>
-                        <bottom>1</bottom>
+                        <left>0</left>
+                        <right>0</right>
+                        <top>0</top>
+                        <bottom>0</bottom>
                         <unit>px</unit>
                     </winphone8>
-                    <winphone8_override>false</winphone8_override>
+                    <winphone8_override>true</winphone8_override>
                     <xhtmlAdvBB>
                         <left>0</left>
                         <right>0</right>
@@ -6316,7 +6329,7 @@
                             <left>0</left>
                             <right>0</right>
                             <top>0</top>
-                            <bottom>4</bottom>
+                            <bottom>0</bottom>
                             <unit>%</unit>
                         </winmobile>
                         <winmobile6x>
@@ -6332,7 +6345,7 @@
                             <left>0</left>
                             <right>0</right>
                             <top>0</top>
-                            <bottom>4</bottom>
+                            <bottom>0</bottom>
                             <unit>%</unit>
                         </winphone8>
                         <winphone8_override>true</winphone8_override>
@@ -6713,7 +6726,7 @@
                     <iphone_fixed_height>false</iphone_fixed_height>
                     <iphone_req_parallel_exec>false</iphone_req_parallel_exec>
                     <iphone_option>0</iphone_option>
-                    <contentAlign>0</contentAlign>
+                    <contentAlign>4</contentAlign>
                     <ipad_option>0</ipad_option>
                     <ipad_fixed_height>false</ipad_fixed_height>
                     <bb_position>0</bb_position>
@@ -7360,19 +7373,22 @@
                         <parent_longText>false</parent_longText>
                         <parent_renderAsAnchor>false</parent_renderAsAnchor>
                         <overrideProperties>KButton.android_contentalignment</overrideProperties>
+                        <overrideProperties>KLabel.winmobileContentAlign</overrideProperties>
+                        <overrideProperties>KLabel.winphone8_contentalign</overrideProperties>
                         <iphone_wrapping>0</iphone_wrapping>
                         <iphone_contentAlignment>0</iphone_contentAlignment>
                         <iphone_longtext>false</iphone_longtext>
                         <ipad_longtext>false</ipad_longtext>
                         <ipad_wrapping>0</ipad_wrapping>
                         <ipad_content_align>0</ipad_content_align>
+                        <c_ToolTip></c_ToolTip>
                         <tooltip></tooltip>
                         <bb_longtext>false</bb_longtext>
                         <bb_content_align>0</bb_content_align>
                         <j2me_longtext>false</j2me_longtext>
                         <j2me_content_align>0</j2me_content_align>
                         <android_content_align>2</android_content_align>
-                        <winMobileContentAlign>top-center</winMobileContentAlign>
+                        <winMobileContentAlign>middle-center</winMobileContentAlign>
                         <symbianWrapping>0</symbianWrapping>
                         <symbianContentAlign>0</symbianContentAlign>
                         <tc_renderAsanchor>false</tc_renderAsanchor>
@@ -7384,7 +7400,7 @@
                         <desktop_hoverskin>Skin Defaults</desktop_hoverskin>
                         <desktopweb_toolTip></desktopweb_toolTip>
                         <windows8_hoverskin>Skin Defaults</windows8_hoverskin>
-                        <winphone8_contentalign>middle-left</winphone8_contentalign>
+                        <winphone8_contentalign>middle-center</winphone8_contentalign>
                         <bb10_contentalignment>0</bb10_contentalignment>
                     </children>
                     <children xsi:type="kLabel">
@@ -8006,19 +8022,21 @@
                         <parent_longText>false</parent_longText>
                         <parent_renderAsAnchor>false</parent_renderAsAnchor>
                         <overrideProperties>KLabel.winmobileContentAlign</overrideProperties>
+                        <overrideProperties>KLabel.winphone8_contentalign</overrideProperties>
                         <iphone_wrapping>0</iphone_wrapping>
                         <iphone_contentAlignment>0</iphone_contentAlignment>
                         <iphone_longtext>false</iphone_longtext>
                         <ipad_longtext>false</ipad_longtext>
                         <ipad_wrapping>0</ipad_wrapping>
                         <ipad_content_align>0</ipad_content_align>
+                        <c_ToolTip></c_ToolTip>
                         <tooltip></tooltip>
                         <bb_longtext>false</bb_longtext>
                         <bb_content_align>0</bb_content_align>
                         <j2me_longtext>false</j2me_longtext>
                         <j2me_content_align>0</j2me_content_align>
                         <android_content_align>0</android_content_align>
-                        <winMobileContentAlign>top-center</winMobileContentAlign>
+                        <winMobileContentAlign>middle-center</winMobileContentAlign>
                         <symbianWrapping>0</symbianWrapping>
                         <symbianContentAlign>0</symbianContentAlign>
                         <tc_renderAsanchor>false</tc_renderAsanchor>
@@ -8030,7 +8048,7 @@
                         <desktop_hoverskin>Skin Defaults</desktop_hoverskin>
                         <desktopweb_toolTip></desktopweb_toolTip>
                         <windows8_hoverskin>Skin Defaults</windows8_hoverskin>
-                        <winphone8_contentalign>middle-left</winphone8_contentalign>
+                        <winphone8_contentalign>middle-center</winphone8_contentalign>
                         <bb10_contentalignment>0</bb10_contentalignment>
                     </children>
                     <children xsi:type="kLabel">
@@ -8653,19 +8671,21 @@
                         <parent_renderAsAnchor>false</parent_renderAsAnchor>
                         <overrideProperties>KButton.android_contentalignment</overrideProperties>
                         <overrideProperties>KLabel.winmobileContentAlign</overrideProperties>
+                        <overrideProperties>KLabel.winphone8_contentalign</overrideProperties>
                         <iphone_wrapping>0</iphone_wrapping>
                         <iphone_contentAlignment>0</iphone_contentAlignment>
                         <iphone_longtext>false</iphone_longtext>
                         <ipad_longtext>false</ipad_longtext>
                         <ipad_wrapping>0</ipad_wrapping>
                         <ipad_content_align>0</ipad_content_align>
+                        <c_ToolTip></c_ToolTip>
                         <tooltip></tooltip>
                         <bb_longtext>false</bb_longtext>
                         <bb_content_align>0</bb_content_align>
                         <j2me_longtext>false</j2me_longtext>
                         <j2me_content_align>0</j2me_content_align>
                         <android_content_align>0</android_content_align>
-                        <winMobileContentAlign>top-center</winMobileContentAlign>
+                        <winMobileContentAlign>middle-center</winMobileContentAlign>
                         <symbianWrapping>0</symbianWrapping>
                         <symbianContentAlign>0</symbianContentAlign>
                         <tc_renderAsanchor>false</tc_renderAsanchor>
@@ -8677,7 +8697,7 @@
                         <desktop_hoverskin>Skin Defaults</desktop_hoverskin>
                         <desktopweb_toolTip></desktopweb_toolTip>
                         <windows8_hoverskin>Skin Defaults</windows8_hoverskin>
-                        <winphone8_contentalign>middle-left</winphone8_contentalign>
+                        <winphone8_contentalign>middle-center</winphone8_contentalign>
                         <bb10_contentalignment>0</bb10_contentalignment>
                     </children>
                     <general_contextMenu>None</general_contextMenu>
@@ -8752,6 +8772,7 @@
                 <seqname></seqname>
             </evtSequence>
         </bb10_onEscape10_root>
+        <bb10_softkeyMode>FORM_ADJUST_RESIZE</bb10_softkeyMode>
     </children>
     <contentAlign>0</contentAlign>
     <gridviewConfig>

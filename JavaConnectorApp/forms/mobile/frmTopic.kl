@@ -608,7 +608,7 @@
         <bb_orientation>0</bb_orientation>
         <blackberry_no_of_items>0</blackberry_no_of_items>
         <bb_titleskinId>titlebarBBskn</bb_titleskinId>
-        <bbTitlebar>true</bbTitlebar>
+        <bbTitlebar>false</bbTitlebar>
         <BBSkinAroundPopup>Skin Defaults</BBSkinAroundPopup>
         <autofocus>true</autofocus>
         <j2me_undockappfooter>false</j2me_undockappfooter>
@@ -2794,6 +2794,8 @@
                 <parent_wrapping>word</parent_wrapping>
                 <parent_longText>false</parent_longText>
                 <parent_renderAsAnchor>false</parent_renderAsAnchor>
+                <overrideProperties>KLabel.winmobileContentAlign</overrideProperties>
+                <overrideProperties>KLabel.winphone8_contentalign</overrideProperties>
                 <iphone_wrapping>0</iphone_wrapping>
                 <iphone_contentAlignment>0</iphone_contentAlignment>
                 <iphone_longtext>false</iphone_longtext>
@@ -2807,7 +2809,7 @@
                 <j2me_longtext>false</j2me_longtext>
                 <j2me_content_align>0</j2me_content_align>
                 <android_content_align>0</android_content_align>
-                <winMobileContentAlign>middle-left</winMobileContentAlign>
+                <winMobileContentAlign>middle-center</winMobileContentAlign>
                 <symbianWrapping>0</symbianWrapping>
                 <symbianContentAlign>0</symbianContentAlign>
                 <tc_renderAsanchor>false</tc_renderAsanchor>
@@ -2819,7 +2821,7 @@
                 <desktop_hoverskin>Skin Defaults</desktop_hoverskin>
                 <desktopweb_toolTip></desktopweb_toolTip>
                 <windows8_hoverskin>Skin Defaults</windows8_hoverskin>
-                <winphone8_contentalign>middle-left</winphone8_contentalign>
+                <winphone8_contentalign>middle-center</winphone8_contentalign>
                 <bb10_contentalignment>0</bb10_contentalignment>
             </children>
             <children xsi:type="kLabel">
@@ -3440,6 +3442,8 @@
                 <parent_wrapping>word</parent_wrapping>
                 <parent_longText>false</parent_longText>
                 <parent_renderAsAnchor>false</parent_renderAsAnchor>
+                <overrideProperties>KLabel.winmobileContentAlign</overrideProperties>
+                <overrideProperties>KLabel.winphone8_contentalign</overrideProperties>
                 <iphone_wrapping>0</iphone_wrapping>
                 <iphone_contentAlignment>0</iphone_contentAlignment>
                 <iphone_longtext>false</iphone_longtext>
@@ -3453,7 +3457,7 @@
                 <j2me_longtext>false</j2me_longtext>
                 <j2me_content_align>0</j2me_content_align>
                 <android_content_align>0</android_content_align>
-                <winMobileContentAlign>middle-left</winMobileContentAlign>
+                <winMobileContentAlign>middle-center</winMobileContentAlign>
                 <symbianWrapping>0</symbianWrapping>
                 <symbianContentAlign>0</symbianContentAlign>
                 <tc_renderAsanchor>false</tc_renderAsanchor>
@@ -3465,7 +3469,7 @@
                 <desktop_hoverskin>Skin Defaults</desktop_hoverskin>
                 <desktopweb_toolTip></desktopweb_toolTip>
                 <windows8_hoverskin>Skin Defaults</windows8_hoverskin>
-                <winphone8_contentalign>middle-left</winphone8_contentalign>
+                <winphone8_contentalign>middle-center</winphone8_contentalign>
                 <bb10_contentalignment>0</bb10_contentalignment>
             </children>
         </children>
@@ -3511,7 +3515,7 @@
                 <mixed_iphone>false</mixed_iphone>
                 <rc_android>false</rc_android>
                 <rc_android_tab>true</rc_android_tab>
-                <rc_blackberry>false</rc_blackberry>
+                <rc_blackberry>true</rc_blackberry>
                 <rc_blackberry10>false</rc_blackberry10>
                 <rc_ipad>true</rc_ipad>
                 <rc_iphone>false</rc_iphone>
@@ -3519,9 +3523,9 @@
                 <rc_palm>false</rc_palm>
                 <rc_symbian>false</rc_symbian>
                 <rc_windows8>true</rc_windows8>
-                <rc_winmobile>false</rc_winmobile>
+                <rc_winmobile>true</rc_winmobile>
                 <rc_winmobile6x>false</rc_winmobile6x>
-                <rc_winphone8>false</rc_winphone8>
+                <rc_winphone8>true</rc_winphone8>
                 <tabspa_ipad>true</tabspa_ipad>
                 <tabspa_windows>true</tabspa_windows>
                 <tabspaspa_android>true</tabspaspa_android>
@@ -4081,7 +4085,7 @@
             <direction>0</direction>
             <usePercent>true</usePercent>
             <orientation>constants.BOX_LAYOUT_HORIZONTAL</orientation>
-            <position>0</position>
+            <position>1</position>
             <widgetLayoutDirection>BOX_LAYOUT_ALIGN_FROM_LEFT</widgetLayoutDirection>
             <overridePerferred>
                 <width>true</width>
@@ -4484,7 +4488,7 @@
                         <unit>%</unit>
                     </bb10>
                     <bb10_override>false</bb10_override>
-                    <bb_override>false</bb_override>
+                    <bb_override>true</bb_override>
                     <default_override>false</default_override>
                     <defaults>
                         <left>0</left>
@@ -4737,6 +4741,8 @@
                 <parent_wrapping>word</parent_wrapping>
                 <parent_longText>false</parent_longText>
                 <parent_renderAsAnchor>false</parent_renderAsAnchor>
+                <overrideProperties>KLabel.winmobileContentAlign</overrideProperties>
+                <overrideProperties>KLabel.winphone8_contentalign</overrideProperties>
                 <iphone_wrapping>0</iphone_wrapping>
                 <iphone_contentAlignment>0</iphone_contentAlignment>
                 <iphone_longtext>false</iphone_longtext>
