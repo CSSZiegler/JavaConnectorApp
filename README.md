@@ -15,6 +15,7 @@ The purpose of this application is to showcase how you can integrate Java servic
 **Mobile**
  * Android
  * iPhone
+ * Windows 7.5
  * SPA Android
  * SPA iPhone
  
