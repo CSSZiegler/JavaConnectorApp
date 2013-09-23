@@ -2506,7 +2506,7 @@
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </ipad>
-                    <ipad_override>false</ipad_override>
+                    <ipad_override>true</ipad_override>
                     <iphonerc>
                         <left>0</left>
                         <right>0</right>

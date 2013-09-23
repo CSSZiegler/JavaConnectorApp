@@ -48,6 +48,7 @@
 					frmKeywords.segHelptopic.setData(hlArray);
 				else{
 					frmTopic.segHelptopic.setData(hlArray);
+					frmTopic.segHelptopic.setVisibility(true);
             		frmTopic.show();
 				}            	
 	            kony.application.dismissLoadingScreen();

@@ -37,8 +37,8 @@
 		        if (mysqlHelpTopicData != null && mysqlHelpTopicData != undefined && 
 		        	mysqlHelpTopicData["helpTopic"] != null && mysqlHelpTopicData["helpTopic"] != undefined) {
 		            var htArray = [];
-		            	kony.application.dismissLoadingScreen();		
-		            	if(mysqlHelpTopicData["helpTopic"].length == 0){
+		            	kony.application.dismissLoadingScreen();
+		                if(mysqlHelpTopicData["helpTopic"].length == 0 || mysqlHelpTopicData["helpTopic"].length == undefined){
 			            	  	if(channel==="tablet"){
 										frmCategory.lblInfo.setVisibility(true);
 										frmCategory.lblInfo.text = "Topic detail is not available.";
@@ -47,6 +47,10 @@
 			            				frmTopic.lblInfo.text = "Topic detail is not available.";
 			            				frmTopic.segHelptopic.setVisibility(false);
 									}
+						}
+						else{
+						if(channel!=="tablet")
+						frmTopic.segHelptopic.setVisibility(true);
 						}
 		            
 		            for (var i = 0; i < mysqlHelpTopicData["helpTopic"].length; i++) {
@@ -60,8 +64,7 @@
 							frmCategory.segHelptopic.setData(htArray);
 						else{
 							frmTopic.segHelptopic.setData(htArray);
-							frmTopic.segHelptopic.setVisibility(true);
-		            		frmTopic.show();
+							frmTopic.show();
 						}
         	       kony.application.dismissLoadingScreen();
 		        }
