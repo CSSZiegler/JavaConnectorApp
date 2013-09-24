@@ -20,6 +20,7 @@ The purpose of this application is to showcase how you can integrate Java servic
  * Blackberry
  * SPA Android
  * SPA iPhone
+ * SPA Blackberry
  
 **Tablet** 
  * Android
