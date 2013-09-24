@@ -1332,7 +1332,7 @@
                     <unit>%</unit>
                 </spaBBNth>
                 <spaBBNth_override>false</spaBBNth_override>
-                <spaBB_override>false</spaBB_override>
+                <spaBB_override>true</spaBB_override>
                 <spaIphone>
                     <left>0</left>
                     <right>0</right>
@@ -1836,10 +1836,10 @@
                     </spaAndroid>
                     <spaAndroid_override>false</spaAndroid_override>
                     <spaBB>
-                        <left>0</left>
-                        <right>0</right>
-                        <top>0</top>
-                        <bottom>0</bottom>
+                        <left>1</left>
+                        <right>1</right>
+                        <top>1</top>
+                        <bottom>1</bottom>
                         <unit>%</unit>
                     </spaBB>
                     <spaBBNth>
@@ -1850,7 +1850,7 @@
                         <unit>%</unit>
                     </spaBBNth>
                     <spaBBNth_override>false</spaBBNth_override>
-                    <spaBB_override>false</spaBB_override>
+                    <spaBB_override>true</spaBB_override>
                     <spaIphone>
                         <left>1</left>
                         <right>1</right>
@@ -2103,10 +2103,10 @@
                     </spaAndroid>
                     <spaAndroid_override>true</spaAndroid_override>
                     <spaBB>
-                        <left>1</left>
-                        <right>1</right>
-                        <top>2</top>
-                        <bottom>2</bottom>
+                        <left>2</left>
+                        <right>2</right>
+                        <top>4</top>
+                        <bottom>4</bottom>
                         <unit>%</unit>
                     </spaBB>
                     <spaBBNth>
@@ -2483,10 +2483,10 @@
                 </spaAndroid>
                 <spaAndroid_override>false</spaAndroid_override>
                 <spaBB>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <left>1</left>
+                    <right>1</right>
+                    <top>1</top>
+                    <bottom>1</bottom>
                     <unit>%</unit>
                 </spaBB>
                 <spaBBNth>
@@ -2750,10 +2750,10 @@
                 </spaAndroid>
                 <spaAndroid_override>false</spaAndroid_override>
                 <spaBB>
-                    <left>1</left>
-                    <right>1</right>
-                    <top>2</top>
-                    <bottom>2</bottom>
+                    <left>2</left>
+                    <right>2</right>
+                    <top>4</top>
+                    <bottom>4</bottom>
                     <unit>%</unit>
                 </spaBB>
                 <spaBBNth>
@@ -4397,10 +4397,10 @@
                     </spaAndroid>
                     <spaAndroid_override>false</spaAndroid_override>
                     <spaBB>
-                        <left>0</left>
-                        <right>0</right>
-                        <top>0</top>
-                        <bottom>0</bottom>
+                        <left>1</left>
+                        <right>1</right>
+                        <top>1</top>
+                        <bottom>1</bottom>
                         <unit>%</unit>
                     </spaBB>
                     <spaBBNth>
@@ -4664,10 +4664,10 @@
                     </spaAndroid>
                     <spaAndroid_override>false</spaAndroid_override>
                     <spaBB>
-                        <left>1</left>
-                        <right>1</right>
-                        <top>2</top>
-                        <bottom>2</bottom>
+                        <left>2</left>
+                        <right>2</right>
+                        <top>4</top>
+                        <bottom>4</bottom>
                         <unit>%</unit>
                     </spaBB>
                     <spaBBNth>
