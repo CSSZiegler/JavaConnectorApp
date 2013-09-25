@@ -25,6 +25,7 @@ The purpose of this application is to showcase how you can integrate Java servic
 **Tablet** 
  * Android
  * iPad
+ * Windows 8
  * SPA iPad
  * SPA Android
  
