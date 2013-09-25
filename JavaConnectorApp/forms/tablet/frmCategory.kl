@@ -4620,7 +4620,7 @@
                     <type>1</type>
                     <windows8>
                         <left>0</left>
-                        <right>0</right>
+                        <right>5</right>
                         <top>0</top>
                         <bottom>0</bottom>
                         <unit>%</unit>
@@ -6312,11 +6312,11 @@
                                 <thinclient_override>false</thinclient_override>
                                 <type>1</type>
                                 <windows8>
-                                    <left>0</left>
+                                    <left>100</left>
                                     <right>0</right>
                                     <top>0</top>
                                     <bottom>0</bottom>
-                                    <unit>%</unit>
+                                    <unit>px</unit>
                                 </windows8>
                                 <windows8_override>true</windows8_override>
                                 <winmobile>
@@ -8014,7 +8014,7 @@
                                         <thinclient_override>false</thinclient_override>
                                         <type>1</type>
                                         <windows8>
-                                            <left>100</left>
+                                            <left>5</left>
                                             <right>5</right>
                                             <top>5</top>
                                             <bottom>5</bottom>

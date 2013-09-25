@@ -6308,11 +6308,11 @@
                                 <thinclient_override>false</thinclient_override>
                                 <type>1</type>
                                 <windows8>
-                                    <left>0</left>
+                                    <left>120</left>
                                     <right>0</right>
                                     <top>0</top>
                                     <bottom>0</bottom>
-                                    <unit>%</unit>
+                                    <unit>px</unit>
                                 </windows8>
                                 <windows8_override>true</windows8_override>
                                 <winmobile>
